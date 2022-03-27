@@ -26,7 +26,7 @@ int count = 0;
 for (int a = 0; a < len - 1; a++) {
 int x = a; int y = len;
 while (x < y - 1) {
-int z = x + (y - x) / 2;
+int z = (x + y) / 2;
 if (arr[a] + arr[z] == value) {
 count++;
 int b = z + 1;
