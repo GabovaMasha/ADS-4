@@ -39,7 +39,12 @@ while ((arr[a] + arr[b] == value) && (b > x)) {
 count++;
 b--;
 }
+break;
 }
+if (arr[a] + arr[z] > value)
+y = z;
+else
+x = z;
 }
 }
 return count;
